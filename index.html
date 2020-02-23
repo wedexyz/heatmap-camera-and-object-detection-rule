@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<link href="site.css" rel="stylesheet">
+		<link rel="shortcut icon" href="/download.png" type="image/x-icon">
+		<title>speed camera</title>
+    </head>
+    <body >
+		
+	<div class="wrapper">
+		<canvas id="heat"></canvas>
+	
+	</div>
+	
+	<div class="wrapper">
+		<video id="video" autoplay ></video>
+		<div class="motion-box" >
+		<p style="color: rgb(241, 245, 14)">Deteksi</p>
+		</div>
+	</div>
+		
+	<h2 id="speed" class= "warna" style="color: rgb(10, 44, 231)"></h2>
+	<div id="jarak" class= "warna" style="color: rgb(10, 44, 231)"></div>
+	<div id="atas" class= "warna" style="color: rgb(10, 44, 231)"></div>	
+	<div id="lebar"class= "warna" style="color: rgb(10, 44, 231)"  ></div>	
+	<div id="tinggi" class= "warna" style="color: rgb(10, 44, 231)" ></div>
+	<div id="heatmap"class= "warna" style="color: rgb(10, 44, 231)" ></div>
+		
+
+
+		
+	
+	
+
+
+	<audio src="audio/activated.wav" id="audio-activated" preload="auto" autostart="false"></audio>
+	<audio src="audio/i-see-you.wav" id="audio-i-see-you" preload="auto" autostart="false"></audio>
+	<audio src="audio/fire.wav" id="audio-fire" preload="auto" autostart="false"></audio>
+	<audio src="audio/target-lost.wav" id="audio-target-lost" preload="auto" autostart="false"></audio>
+	<script src="jquery.min.js"></script>
+	<script src="diff-cam-engine.js"></script>
+	<script src="site.js"></script>
+    </body>
+</html>

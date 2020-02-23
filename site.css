@@ -1,0 +1,88 @@
+body {
+	margin:20px 20px 20px;
+	text-align: left;
+	
+}
+
+.wrapper {
+	display: inline-block;
+	position: relative;
+	width: 640px;
+	height: 480px;
+}
+
+video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 640px;
+	height: 480px;
+	transform: scaleX(-1); 
+}
+
+.motion-box {
+	display: none;
+	position: absolute;
+	border: 4px solid rgba(18, 224, 18, 0.89);
+	transition: all .1s;	
+	background-color: rgba(0, 153, 255, 0.582);
+	 
+}
+
+
+
+
+
+canvas {
+	width: 640px;
+	height: 480px;	
+	-ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+	transform: scaleX(-1); 
+
+}
+
+.heat{
+	display: none;
+	position: absolute;
+	border: 4px solid rgb(17, 47, 216);
+	transition: all .2s;
+}
+.warna {
+	border: 2px solid rgb(224, 230, 233);
+/* Safari 4.0 - 8.0 */
+-webkit-animation-name: example;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 1s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+animation-name: example;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+	0%   {background-color:rgba(16, 228, 12, 0.746);}
+	50%  {background-color:rgba(12, 191, 236, 0.808);}
+
+  }
+  
+  /* Standard syntax */
+  @keyframes example {
+	0%   {background-color:rgba(16, 228, 12, 0.746);}
+	50%  {background-color:rgba(17, 182, 223, 0.808);}
+
+  }
+
+
+
+
+
+
+
